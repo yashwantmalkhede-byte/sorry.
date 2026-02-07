@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorry Love 🤍</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ffeef2;
+    font-family:Arial, sans-serif;
+    text-align:center;
+}
+
+/* Button */
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:25px;
+    background:#ff4d6d;
+    color:white;
+    cursor:pointer;
+}
+
+/* Hidden content */
+.content{
+    display:none;
+}
+
+img{
+    width:220px;
+    margin-top:15px;
+}
+
+.message{
+    font-size:22px;
+    color:#ff4d6d;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div>
+
+    <!-- First Button -->
+    <button onclick="showSorry()">Click Here ❤️</button>
+
+    <!-- Cartoon + Message -->
+    <div class="content" id="sorryContent">
+        <img src="D:\SUPRICE\sorry.gif" alt="hug">
+        <div class="message">
+          
+        </div>
+    </div>
+
+</div>
+
+<script>
+function showSorry(){
+    document.querySelector("button").style.display="none";
+    document.getElementById("sorryContent").style.display="block";
+}
+</script>
+
+</body>
+</html>
